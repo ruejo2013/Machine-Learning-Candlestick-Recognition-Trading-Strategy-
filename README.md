@@ -3,7 +3,7 @@ Columbia University FinTech BootCamp Project 2
 
 # Description
 
-This project uses several methods to create multiple candlestick metrics using Python. It will then feed the candlesticks metrics into a machine learning model that will identify the candlesticks.  Based on the model predictions, we can make informed trading strategy decisions.
+This project identifies multiple candlestick patterns using Python, which are used to feed into a machine learning model that will predict market movement based off of multiple pattern factors. While there are strategies to trade based on one candlestick pattern, using multiple patterns paired with machine learning gives us the confluence needed to make more confident trades.
 
 ---
 
