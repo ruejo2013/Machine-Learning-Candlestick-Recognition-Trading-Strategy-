@@ -34,16 +34,16 @@ Created the Candle stick Trends:
 
 **Candle Sticks Names | Code**
 
-Bullish harami     : BLLHRM
-Bearish harami     : BERHRM
-Red hammer     : RDHM
-Green hammer     : GRNHM
-Bull kicker     : BLLKCK
-Bear kicker     : BERKCK
-Morning star     : MRNSTR
-Evening star     : EVNSTR
-Green shooting star     : GRNSSTR
-Red shooting star     : RDSSTR
+- Bullish harami: BLLHRM
+- Bearish harami: BERHRM
+- Red hammer: RDHM
+- Green hammer: GRNHM
+- Bull kicker: BLLKCK
+- Bear kicker: BERKCK
+- Morning star: MRNSTR
+- Evening star: EVNSTR
+- Green shooting star: GRNSSTR
+- Red shooting star: RDSSTR
 
 ![image](https://user-images.githubusercontent.com/107157533/194451132-eba2f9d0-b31a-4a66-b01e-02bbfef34beb.png)
 
