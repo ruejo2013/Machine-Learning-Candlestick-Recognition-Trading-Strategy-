@@ -70,7 +70,9 @@ Steps:
 
 # Next Steps
 
+- Enrich our dataset
 - Further Tune the Model
+- Incorporating the model into our trading strategies
 - Analysis of market performance after pattern identification 
 - Formulate and backtest a trading strategy
 - Connect to AWS to run during market hours and identify in real time
