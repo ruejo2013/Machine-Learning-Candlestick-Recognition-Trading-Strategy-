@@ -1,6 +1,4 @@
 time,open,high,low,close,SMA,trend,morning_star,evening_star,bullish_harami,bearish_harami,green_hammer,red_hammer,bull_kicker,bear_kicker,green_shooting_star,red_shooting_star,candlesticks
-2018-10-03 09:30:00-04:00,2931.69,2939.86,2931.69,2937.36,,False,False,False,False,False,False,False,False,False,False,False,False
-2018-10-03 10:30:00-04:00,2937.36,2937.55,2931.77,2935.51,,False,False,False,False,False,False,False,False,False,False,False,False
 2018-10-03 11:30:00-04:00,2935.51,2937.69,2931.83,2937.1,2936.656666666667,False,False,False,False,False,False,False,False,False,False,False,False
 2018-10-03 12:30:00-04:00,2937.1,2937.34,2934.03,2936.06,2936.2233333333334,False,False,False,False,False,False,False,False,False,False,False,False
 2018-10-03 13:30:00-04:00,2936.07,2937.37,2934.4,2935.11,2936.09,False,False,False,False,False,False,False,False,False,False,False,False
