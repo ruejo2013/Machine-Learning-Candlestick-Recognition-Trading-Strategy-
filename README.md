@@ -8,7 +8,7 @@ This project identifies multiple candlestick patterns using Python, which are us
 ---
 
 # Research Questions to Answer
-What candlestick formations are the best to trade? How well can we train a machine learning model to identify certain candlestick formations? Can we create a profitable trading strategy based off of the models candlestick formation identification? 
+How well can we train a machine learning model to identify certain candlestick formations? Can we create a profitable trading strategy based off the model's candlestick formation identification? 
 
 ---
 
@@ -21,10 +21,15 @@ This project uses Python 3.9 and JupyterLab.
 
 ---
 
-# Creating OHLC function to Plot Candlestick Patterns
-copy right https://mikepapinski.github.io/deep%20learning/machine%20learning/python/forex/2018/12/15/Predict-Candlestick-patterns-with-Keras-and-Forex-data.md.html
+# Data
+Downloaded S&P500 data from TradingView
 
-![image](https://user-images.githubusercontent.com/107157533/194450870-e3c54a03-10e1-4f7d-879a-9720d98843b9.png)
+---
+
+# Creating OHLC function to Plot Candlestick Patterns
+
+![image](https://user-images.githubusercontent.com/107157533/194716331-03963e7a-6de2-434c-84da-01abc0393894.png)
+
 
 ---
 
@@ -34,16 +39,16 @@ Created the Candle stick Trends:
 
 **Candle Sticks Names | Code**
 
-Bullish harami     : BLLHRM
-Bearish harami     : BERHRM
-Red hammer     : RDHM
-Green hammer     : GRNHM
-Bull kicker     : BLLKCK
-Bear kicker     : BERKCK
-Morning star     : MRNSTR
-Evening star     : EVNSTR
-Green shooting star     : GRNSSTR
-Red shooting star     : RDSSTR
+- Bullish harami: BLLHRM
+- Bearish harami: BERHRM
+- Red hammer: RDHM
+- Green hammer: GRNHM
+- Bull kicker: BLLKCK
+- Bear kicker: BERKCK
+- Morning star: MRNSTR
+- Evening star: EVNSTR
+- Green shooting star: GRNSSTR
+- Red shooting star: RDSSTR
 
 ![image](https://user-images.githubusercontent.com/107157533/194451132-eba2f9d0-b31a-4a66-b01e-02bbfef34beb.png)
 
@@ -65,12 +70,17 @@ Steps:
 - Train the model
 - Test the model
 - Evaluate the model
+- Reduce the target class to two
+- Train new models
+- Evaluate the model
 
 ---
 
 # Next Steps
 
+- Enrich our dataset
 - Further Tune the Model
+- Incorporating the model into our trading strategies
 - Analysis of market performance after pattern identification 
 - Formulate and backtest a trading strategy
 - Connect to AWS to run during market hours and identify in real time
@@ -78,9 +88,9 @@ Steps:
 
 ---
 
-# License
-Columbia Engineering FinTech Bootcamp
-
+# License & Credits
+- Columbia Engineering FinTech Bootcamp
+- Credit to https://github.com/aliisoli/candlesticks_study/blob/master/Candlesticks_Historical_Analysis.ipynb for candlestick identification functions
 
 
 
