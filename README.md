@@ -22,7 +22,6 @@ This project uses Python 3.9 and JupyterLab.
 ---
 
 # Creating OHLC function to Plot Candlestick Patterns
-copy right https://mikepapinski.github.io/deep%20learning/machine%20learning/python/forex/2018/12/15/Predict-Candlestick-patterns-with-Keras-and-Forex-data.md.html
 
 ![image](https://user-images.githubusercontent.com/107157533/194450870-e3c54a03-10e1-4f7d-879a-9720d98843b9.png)
 
