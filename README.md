@@ -8,7 +8,7 @@ This project uses several methods to create multiple candlestick metrics using P
 ---
 
 # Research Questions to Answer
-How well can we train a machine learning model to identify certain candlestick formations? Can we create a profitable trading strategy based off of the models candlestick formation identification? 
+How well can we train a machine learning model to identify certain candlestick formations? Can we create a profitable trading strategy based off the model's candlestick formation identification? 
 
 ---
 
