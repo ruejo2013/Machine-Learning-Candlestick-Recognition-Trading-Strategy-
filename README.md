@@ -21,9 +21,15 @@ This project uses Python 3.9 and JupyterLab.
 
 ---
 
+# Data
+Downloaded S&P500 data from TradingView
+
+---
+
 # Creating OHLC function to Plot Candlestick Patterns
 
-![image](https://user-images.githubusercontent.com/107157533/194450870-e3c54a03-10e1-4f7d-879a-9720d98843b9.png)
+![image](https://user-images.githubusercontent.com/107157533/194716331-03963e7a-6de2-434c-84da-01abc0393894.png)
+
 
 ---
 
