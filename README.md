@@ -66,6 +66,8 @@ Steps:
 - Test the model
 - Evaluate the model
 - Reduce the target class to two
+- Train new models
+- Evaluate the model
 
 ---
 
