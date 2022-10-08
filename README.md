@@ -89,8 +89,8 @@ Steps:
 ---
 
 # License & Credits
-Columbia Engineering FinTech Bootcamp
-Credit to https://github.com/aliisoli/candlesticks_study/blob/master/Candlesticks_Historical_Analysis.ipynb for candlestick identification functions
+- Columbia Engineering FinTech Bootcamp
+- Credit to https://github.com/aliisoli/candlesticks_study/blob/master/Candlesticks_Historical_Analysis.ipynb for candlestick identification functions
 
 
 
