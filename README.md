@@ -57,10 +57,10 @@ S&P500 high, low, open, and close prices from October 03, 2018 - October 4, 2022
 - Green shooting star: GRNSSTR
 - Red shooting star: RDSSTR
 
-* Our first major hurdle with this project was accurately identifying Morning Star and Evening Star patterns, our initial plan was to use TA-Lib and the built in candlestick recognition functions. But after plotting the identified patterns we felt unsatisfied with the results and sought alternative methods.
-* We found a project containing functions to identify the patterns we needed, but we felt the morning star and evening star functions needed some tuning. After tuning those two functions, we found all other functions in the referenced project to be accurate and effective for our purposes.
-* https://github.com/aliisoli/candlesticks_study/blob/master/Candlesticks_Historical_Analysis.ipynb
-* All of the pattern recognition functions identified the final candlestick (row) in the pattern within the DataFrame. Each identified row and the necessary preceding rows were added to a new dataframe in order to generate a visualization containing only every identified pattern. Our identified patterns were then compared with industry standards to check the accuracy of our candlestick identification functions.
+### Our first major hurdle with this project was accurately identifying Morning Star and Evening Star patterns, our initial plan was to use TA-Lib and the built in candlestick recognition functions. But after plotting the identified patterns we felt unsatisfied with the results and sought alternative methods.
+### We found a project containing functions to identify the patterns we needed, but we felt the morning star and evening star functions needed some tuning. After tuning those two functions, we found all other functions in the referenced project to be accurate and effective for our purposes.
+#### https://github.com/aliisoli/candlesticks_study/blob/master/Candlesticks_Historical_Analysis.ipynb
+### All of the pattern recognition functions identified the final candlestick (row) in the pattern within the DataFrame. Each identified row and the necessary preceding rows were added to a new dataframe in order to generate a visualization containing only every identified pattern. Our identified patterns were then compared with industry standards to check the accuracy of our candlestick identification functions.
 
 Examples of Morning Star and Evening Star pattern plots can be seen below.
 
