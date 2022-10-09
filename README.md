@@ -98,7 +98,7 @@ Examples of Morning Star and Evening Star pattern plots can be seen below.
 **Evaluating Model Performance:**
 We found that GaussianNB model was accurate 28% of the time, the Naive Bayes CategoricalNB model only performed at 26%, and the ANN was 51% accurate.
 
-***Candlestick Pattern Frequency***
+***ANN Accuracy ***
 ![ANN Accuracy](Resources/README_images/ann_two.png)
 
 ---
