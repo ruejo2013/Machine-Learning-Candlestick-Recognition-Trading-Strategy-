@@ -13,31 +13,36 @@ How well can we train a machine learning model to identify certain candlestick f
 ---
 
 # Technologies
-This project uses Python 3.9 and JupyterLab.
+This project leverages JupyterLab to use the following technologies:
+* Python 3.9 
+* Numpy version: 1.21.5
+* Pandas version: 1.3.5
+* Sklearn version: 1.0.2
+* Keras version: 2.10.0 
+
+---
 
 # Libraries
 
-<img width="336" alt="image" src="https://user-images.githubusercontent.com/107157533/194448367-9e651488-0592-450d-af8f-bf65c6a9c3c7.png">
-<img width="152" alt="image" src="https://user-images.githubusercontent.com/107157533/194719822-f4d31bd1-7a05-43a7-9c2a-ec94d623eb61.png">
-
+![Imports](Resources/README_images/libraries.png) 
 
 ---
 
 # Data
-S&P500 high, low, open, and close prices downloaded from TradingView
+S&P500 high, low, open, and close prices from October 03, 2018 - October 4, 2022 was downloaded from TradingView on an hourly timeframe
 
 ---
 
 # Creating OHLC function to Plot Candlestick Patterns
 
-![image](https://user-images.githubusercontent.com/107157533/194716331-03963e7a-6de2-434c-84da-01abc0393894.png)
+![Original Candlestick Plot](Resources/README_images/Original_Data_Plot.png) 
 
+**Candlestick Plot - Sample Size**
+![Candlestick Sampel Plot](Resources/README_images/candlestick_sample.png) 
 
 ---
 
-# Identifying Candlestick Patterns
-
-Created the Candle stick Trends:
+# Part 1: Identifying Candlestick Patterns to create a target dataset for our model 
 
 **Candle Sticks Names | Code**
 
@@ -52,18 +57,25 @@ Created the Candle stick Trends:
 - Green shooting star: GRNSSTR
 - Red shooting star: RDSSTR
 
-![image](https://user-images.githubusercontent.com/107157533/194451132-eba2f9d0-b31a-4a66-b01e-02bbfef34beb.png)
+* Our first major hurdle with this project was accurately identifying Morning Star and Evening Star patterns, our initial plan was to use TA-Lib and the built in candlestick recognition functions. But after plotting the identified patterns we felt unsatisfied with the results and sought alternative methods.
+* We found a project containing functions to identify the patterns we needed, but we felt the morning star and evening star functions needed some tuning. After tuning those two functions, we found all other functions in the referenced project to be accurate and effective for our purposes.
+* https://github.com/aliisoli/candlesticks_study/blob/master/Candlesticks_Historical_Analysis.ipynb
+* All of the pattern recognition functions identified the final candlestick (row) in the pattern within the DataFrame. Each identified row and the necessary preceding rows were added to a new dataframe in order to generate a visualization containing only every identified pattern. Our identified patterns were then compared with industry standards to check the accuracy of our candlestick identification functions.
 
-![image](https://user-images.githubusercontent.com/107157533/194451195-3bb68d93-3100-4389-879c-68848ea2b5c6.png)
+Examples of Morning Star and Evening Star pattern plots can be seen below.
 
+**Morning Star**
+![Morning Star](Resources/README_images/morning_star_example.png)
 
+**Evening Star**
+![Evening Star](Resources/README_images/evening_star_example.png)
 
 **Candlestick Pattern Frequency**
-![image](https://user-images.githubusercontent.com/107157533/194451341-9151d8b0-0d35-4008-b48a-2dbc782506af.png)
+![Pattern Frequency](Resources/README_images/candlestick_frequency.png)
 
 ---
 
-# Machine Learning Models
+# Part 3: Machine Learning Models
 
 1. Training Naive Bayes Model with Sklearn
 - CategoricalNB
@@ -75,7 +87,7 @@ Created the Candle stick Trends:
 - Drop columns
 - Transform the Target column to dummy variable
 - Scale the dataset
-- Split the data tp training and testing set
+- Split the data to training and testing set
 - Train the model
 - Test the model
 - Evaluate the model
@@ -86,16 +98,19 @@ Created the Candle stick Trends:
 **Evaluating Model Performance:**
 We found that GaussianNB model was accurate 28% of the time, the Naive Bayes CategoricalNB model only performed at 26%, and the ANN was 51% accurate.
 
+***Candlestick Pattern Frequency***
+![ANN Accuracy](Resources/README_images/ann_two.png)
+
 ---
 
 # Conclusion
 
-After applying various data preprocessing, model training and testing approach our best accuracy score was 51%. We conclude that the small target dataset, and the non-evenly distrubuted frequencies of the targets resulted in the models poor performances.
+After applying various methods of data preprocessing, model training, and testing, our best accuracy score was 51%. We conclude that the small target dataset, and the non-evenly distributed frequencies of the targets resulted in the models poor performances.
 
 **Approach to solving the issues**
 - Class imbalance issue: Included 'stratification' when doing train test split of the dataset.
-- Data encoding and scaling: Scaled the dataset when neccessary, encode the label as binary or as 'numeric categories'
-- Model Accuracy: Use different models and tuning technique to improve model accuracy.
+- Data encoding and scaling: Scaled the dataset when necessary, encode the label as binary or as 'numeric categories'
+- Model Accuracy: Use different models and tuning techniques to improve model accuracy.
 
 ---
 
